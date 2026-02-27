@@ -54,6 +54,11 @@ def build_rag_prompt(analysis, question, retrieved_docs, k=3):
 
     prompt = f"""
 You are an AI Financial Copilot designed to help users understand and improve their financial decisions.
+STRICT RULES:
+- Your ENTIRE response must be under 200 words.
+- Do NOT explain more than necessary.
+- Do NOT repeat information.
+- Be direct and actionable.
 
 Your responsibilities:
 

@@ -57,6 +57,13 @@ def ask_question(request: AnalyzeRequest, question: str):
         request.transactions,
         request.holdings
     )
-    answer = answer_question(question, analysis)
+    if not analysis or not isinstance(analysis, dict):
+        analysis = {
+            "financial_context": {},
+            "portfolio_context": {},
+            "anomalies": "No anomalies detected."
+        }
+
+    answer = answer_question(analysis, question)
 
     return {"answer": answer}

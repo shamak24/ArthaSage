@@ -32,7 +32,7 @@ const navItems = [
   },
   {
     title: "Ask Question",
-    url: "/user/ask",
+    url: "/user/assistant",
     icon: IconMessageQuestion,
   },
   {
