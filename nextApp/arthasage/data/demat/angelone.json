@@ -1,0 +1,41 @@
+{
+  "accountName": "Angel One Demat Account",
+  "provider": "Angel One",
+  "holdings": [
+    {
+      "symbol": "HDFCBANK",
+      "companyName": "HDFC Bank",
+      "sector": "Banking",
+      "quantity": 15,
+      "avgPrice": 1480
+    },
+    {
+      "symbol": "ITC",
+      "companyName": "ITC Ltd",
+      "sector": "FMCG",
+      "quantity": 40,
+      "avgPrice": 410
+    },
+    {
+      "symbol": "SBIN",
+      "companyName": "State Bank of India",
+      "sector": "Banking",
+      "quantity": 18,
+      "avgPrice": 620
+    },
+    {
+      "symbol": "SUNPHARMA",
+      "companyName": "Sun Pharmaceutical Industries",
+      "sector": "Pharma",
+      "quantity": 12,
+      "avgPrice": 960
+    },
+    {
+      "symbol": "HINDUNILVR",
+      "companyName": "Hindustan Unilever",
+      "sector": "FMCG",
+      "quantity": 6,
+      "avgPrice": 2500
+    }
+  ]
+}

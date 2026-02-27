@@ -1,0 +1,41 @@
+{
+  "accountName": "Zerodha Demat Account",
+  "provider": "Zerodha",
+  "holdings": [
+    {
+      "symbol": "TCS",
+      "companyName": "Tata Consultancy Services",
+      "sector": "IT",
+      "quantity": 12,
+      "avgPrice": 3500
+    },
+    {
+      "symbol": "INFY",
+      "companyName": "Infosys",
+      "sector": "IT",
+      "quantity": 20,
+      "avgPrice": 1500
+    },
+    {
+      "symbol": "WIPRO",
+      "companyName": "Wipro Ltd",
+      "sector": "IT",
+      "quantity": 30,
+      "avgPrice": 420
+    },
+    {
+      "symbol": "HCLTECH",
+      "companyName": "HCL Technologies",
+      "sector": "IT",
+      "quantity": 10,
+      "avgPrice": 1200
+    },
+    {
+      "symbol": "RELIANCE",
+      "companyName": "Reliance Industries",
+      "sector": "Energy",
+      "quantity": 5,
+      "avgPrice": 2400
+    }
+  ]
+}

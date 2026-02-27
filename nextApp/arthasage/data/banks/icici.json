@@ -1,0 +1,272 @@
+{
+  "accountName": "ICICI Salary Account",
+  "provider": "ICICI",
+  "transactions": [
+    {
+      "date": "2025-01-01",
+      "description": "Salary Credit",
+      "amount": 90000,
+      "type": "income",
+      "category": "Salary"
+    },
+    {
+      "date": "2025-01-03",
+      "description": "Starbucks",
+      "amount": 650,
+      "type": "expense",
+      "category": "Food"
+    },
+    {
+      "date": "2025-01-06",
+      "description": "Flipkart Purchase",
+      "amount": 7200,
+      "type": "expense",
+      "category": "Shopping"
+    },
+    {
+      "date": "2025-01-09",
+      "description": "Gym Membership",
+      "amount": 2500,
+      "type": "expense",
+      "category": "Health"
+    },
+    {
+      "date": "2025-01-11",
+      "description": "Electricity Bill",
+      "amount": 3100,
+      "type": "expense",
+      "category": "Utilities"
+    },
+    {
+      "date": "2025-01-14",
+      "description": "Cab Ride",
+      "amount": 320,
+      "type": "expense",
+      "category": "Transport"
+    },
+    {
+      "date": "2025-01-21",
+      "description": "Dining Out",
+      "amount": 4200,
+      "type": "expense",
+      "category": "Food"
+    },
+    {
+      "date": "2025-01-28",
+      "description": "Bonus Credit",
+      "amount": 15000,
+      "type": "income",
+      "category": "Bonus"
+    },
+    {
+      "date": "2025-01-29",
+      "description": "Amazon Prime Subscription",
+      "amount": 1499,
+      "type": "expense",
+      "category": "Entertainment"
+    },
+    {
+      "date": "2025-01-30",
+      "description": "Grocery Shopping - More",
+      "amount": 3280,
+      "type": "expense",
+      "category": "Food"
+    },
+    {
+      "date": "2025-02-01",
+      "description": "Salary Credit",
+      "amount": 90000,
+      "type": "income",
+      "category": "Salary"
+    },
+    {
+      "date": "2025-02-02",
+      "description": "Rent Payment",
+      "amount": 22000,
+      "type": "expense",
+      "category": "Housing"
+    },
+    {
+      "date": "2025-02-03",
+      "description": "Petrol Pump - Shell",
+      "amount": 3500,
+      "type": "expense",
+      "category": "Transport"
+    },
+    {
+      "date": "2025-02-04",
+      "description": "Swiggy Genie",
+      "amount": 150,
+      "type": "expense",
+      "category": "Transport"
+    },
+    {
+      "date": "2025-02-05",
+      "description": "McDonald's",
+      "amount": 580,
+      "type": "expense",
+      "category": "Food"
+    },
+    {
+      "date": "2025-02-06",
+      "description": "Mobile Recharge - Airtel",
+      "amount": 719,
+      "type": "expense",
+      "category": "Utilities"
+    },
+    {
+      "date": "2025-02-07",
+      "description": "Myntra Fashion",
+      "amount": 4850,
+      "type": "expense",
+      "category": "Shopping"
+    },
+    {
+      "date": "2025-02-08",
+      "description": "Medical Store",
+      "amount": 980,
+      "type": "expense",
+      "category": "Health"
+    },
+    {
+      "date": "2025-02-09",
+      "description": "Rapido Auto Ride",
+      "amount": 85,
+      "type": "expense",
+      "category": "Transport"
+    },
+    {
+      "date": "2025-02-10",
+      "description": "PVR Cinemas",
+      "amount": 1200,
+      "type": "expense",
+      "category": "Entertainment"
+    },
+    {
+      "date": "2025-02-11",
+      "description": "Internet Bill - ACT",
+      "amount": 1299,
+      "type": "expense",
+      "category": "Utilities"
+    },
+    {
+      "date": "2025-02-12",
+      "description": "Zepto Delivery",
+      "amount": 1150,
+      "type": "expense",
+      "category": "Food"
+    },
+    {
+      "date": "2025-02-13",
+      "description": "Lifestyle Stores",
+      "amount": 7500,
+      "type": "expense",
+      "category": "Shopping"
+    },
+    {
+      "date": "2025-02-14",
+      "description": "Barbeque Nation",
+      "amount": 2800,
+      "type": "expense",
+      "category": "Food"
+    },
+    {
+      "date": "2025-02-15",
+      "description": "Freelance Project",
+      "amount": 18000,
+      "type": "income",
+      "category": "Freelance"
+    },
+    {
+      "date": "2025-02-16",
+      "description": "Disney+ Hotstar",
+      "amount": 899,
+      "type": "expense",
+      "category": "Entertainment"
+    },
+    {
+      "date": "2025-02-17",
+      "description": "Uber Ride",
+      "amount": 380,
+      "type": "expense",
+      "category": "Transport"
+    },
+    {
+      "date": "2025-02-18",
+      "description": "Water Bill",
+      "amount": 520,
+      "type": "expense",
+      "category": "Utilities"
+    },
+    {
+      "date": "2025-02-19",
+      "description": "Decathlon Sports",
+      "amount": 3600,
+      "type": "expense",
+      "category": "Shopping"
+    },
+    {
+      "date": "2025-02-20",
+      "description": "Dentist Appointment",
+      "amount": 1800,
+      "type": "expense",
+      "category": "Health"
+    },
+    {
+      "date": "2025-02-21",
+      "description": "Zomato Food Order",
+      "amount": 750,
+      "type": "expense",
+      "category": "Food"
+    },
+    {
+      "date": "2025-02-22",
+      "description": "Steam Wallet",
+      "amount": 2500,
+      "type": "expense",
+      "category": "Entertainment"
+    },
+    {
+      "date": "2025-02-23",
+      "description": "LPG Cylinder",
+      "amount": 1050,
+      "type": "expense",
+      "category": "Utilities"
+    },
+    {
+      "date": "2025-02-24",
+      "description": "Coursera Subscription",
+      "amount": 3999,
+      "type": "expense",
+      "category": "Education"
+    },
+    {
+      "date": "2025-02-25",
+      "description": "Lenskart Eyewear",
+      "amount": 4200,
+      "type": "expense",
+      "category": "Health"
+    },
+    {
+      "date": "2025-02-26",
+      "description": "Interest Earned",
+      "amount": 680,
+      "type": "income",
+      "category": "Interest"
+    },
+    {
+      "date": "2025-02-27",
+      "description": "Domino's Pizza",
+      "amount": 920,
+      "type": "expense",
+      "category": "Food"
+    },
+    {
+      "date": "2025-02-28",
+      "description": "Westside Shopping",
+      "amount": 5400,
+      "type": "expense",
+      "category": "Shopping"
+    }
+  ]
+}

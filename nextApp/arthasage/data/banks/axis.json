@@ -1,0 +1,265 @@
+{
+  "accountName": "Axis Salary Account",
+  "provider": "Axis",
+  "transactions": [
+    {
+      "date": "2025-01-01",
+      "description": "Salary Credit",
+      "amount": 90000,
+      "type": "income",
+      "category": "Salary"
+    },
+    {
+      "date": "2025-01-03",
+      "description": "Starbucks",
+      "amount": 650,
+      "type": "expense",
+      "category": "Food"
+    },
+    {
+      "date": "2025-01-06",
+      "description": "Flipkart Purchase",
+      "amount": 7200,
+      "type": "expense",
+      "category": "Shopping"
+    },
+    {
+      "date": "2025-01-09",
+      "description": "Gym Membership",
+      "amount": 2500,
+      "type": "expense",
+      "category": "Health"
+    },
+    {
+      "date": "2025-01-11",
+      "description": "Electricity Bill",
+      "amount": 3100,
+      "type": "expense",
+      "category": "Utilities"
+    },
+    {
+      "date": "2025-01-14",
+      "description": "Cab Ride",
+      "amount": 320,
+      "type": "expense",
+      "category": "Transport"
+    },
+    {
+      "date": "2025-01-21",
+      "description": "Dining Out",
+      "amount": 4200,
+      "type": "expense",
+      "category": "Food"
+    },
+    {
+      "date": "2025-01-28",
+      "description": "Bonus Credit",
+      "amount": 15000,
+      "type": "income",
+      "category": "Bonus"
+    },
+    {
+      "date": "2025-01-30",
+      "description": "Netflix Subscription",
+      "amount": 649,
+      "type": "expense",
+      "category": "Entertainment"
+    },
+    {
+      "date": "2025-02-01",
+      "description": "Salary Credit",
+      "amount": 90000,
+      "type": "income",
+      "category": "Salary"
+    },
+    {
+      "date": "2025-02-02",
+      "description": "BigBasket Groceries",
+      "amount": 3450,
+      "type": "expense",
+      "category": "Food"
+    },
+    {
+      "date": "2025-02-03",
+      "description": "Petrol Pump",
+      "amount": 2800,
+      "type": "expense",
+      "category": "Transport"
+    },
+    {
+      "date": "2025-02-04",
+      "description": "Amazon Prime",
+      "amount": 1499,
+      "type": "expense",
+      "category": "Entertainment"
+    },
+    {
+      "date": "2025-02-05",
+      "description": "Coffee Day",
+      "amount": 420,
+      "type": "expense",
+      "category": "Food"
+    },
+    {
+      "date": "2025-02-06",
+      "description": "Mobile Recharge",
+      "amount": 599,
+      "type": "expense",
+      "category": "Utilities"
+    },
+    {
+      "date": "2025-02-07",
+      "description": "Pharmacy",
+      "amount": 1250,
+      "type": "expense",
+      "category": "Health"
+    },
+    {
+      "date": "2025-02-08",
+      "description": "Zomato Order",
+      "amount": 850,
+      "type": "expense",
+      "category": "Food"
+    },
+    {
+      "date": "2025-02-09",
+      "description": "Metro Card Recharge",
+      "amount": 1000,
+      "type": "expense",
+      "category": "Transport"
+    },
+    {
+      "date": "2025-02-10",
+      "description": "Myntra Shopping",
+      "amount": 5600,
+      "type": "expense",
+      "category": "Shopping"
+    },
+    {
+      "date": "2025-02-11",
+      "description": "Internet Bill",
+      "amount": 1200,
+      "type": "expense",
+      "category": "Utilities"
+    },
+    {
+      "date": "2025-02-12",
+      "description": "Movie Tickets",
+      "amount": 900,
+      "type": "expense",
+      "category": "Entertainment"
+    },
+    {
+      "date": "2025-02-13",
+      "description": "Restaurant Bill",
+      "amount": 3200,
+      "type": "expense",
+      "category": "Food"
+    },
+    {
+      "date": "2025-02-14",
+      "description": "Swiggy Order",
+      "amount": 720,
+      "type": "expense",
+      "category": "Food"
+    },
+    {
+      "date": "2025-02-15",
+      "description": "Book Store",
+      "amount": 1890,
+      "type": "expense",
+      "category": "Shopping"
+    },
+    {
+      "date": "2025-02-16",
+      "description": "Uber Ride",
+      "amount": 450,
+      "type": "expense",
+      "category": "Transport"
+    },
+    {
+      "date": "2025-02-17",
+      "description": "Salon Services",
+      "amount": 1500,
+      "type": "expense",
+      "category": "Health"
+    },
+    {
+      "date": "2025-02-18",
+      "description": "Water Bill",
+      "amount": 650,
+      "type": "expense",
+      "category": "Utilities"
+    },
+    {
+      "date": "2025-02-19",
+      "description": "Freelance Payment",
+      "amount": 25000,
+      "type": "income",
+      "category": "Freelance"
+    },
+    {
+      "date": "2025-02-20",
+      "description": "DMart Purchase",
+      "amount": 4200,
+      "type": "expense",
+      "category": "Shopping"
+    },
+    {
+      "date": "2025-02-21",
+      "description": "Spotify Premium",
+      "amount": 119,
+      "type": "expense",
+      "category": "Entertainment"
+    },
+    {
+      "date": "2025-02-22",
+      "description": "Pizza Hut",
+      "amount": 1350,
+      "type": "expense",
+      "category": "Food"
+    },
+    {
+      "date": "2025-02-23",
+      "description": "Gas Cylinder",
+      "amount": 950,
+      "type": "expense",
+      "category": "Utilities"
+    },
+    {
+      "date": "2025-02-24",
+      "description": "Online Course",
+      "amount": 2999,
+      "type": "expense",
+      "category": "Education"
+    },
+    {
+      "date": "2025-02-25",
+      "description": "Doctor Consultation",
+      "amount": 800,
+      "type": "expense",
+      "category": "Health"
+    },
+    {
+      "date": "2025-02-26",
+      "description": "Rapido Ride",
+      "amount": 180,
+      "type": "expense",
+      "category": "Transport"
+    },
+    {
+      "date": "2025-02-27",
+      "description": "Interest Credit",
+      "amount": 450,
+      "type": "income",
+      "category": "Interest"
+    },
+    {
+      "date": "2025-02-28",
+      "description": "Steam Games",
+      "amount": 1899,
+      "type": "expense",
+      "category": "Entertainment"
+    }
+  ]
+}

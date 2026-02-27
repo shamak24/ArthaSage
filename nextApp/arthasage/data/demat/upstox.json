@@ -1,0 +1,41 @@
+{
+  "accountName": "Upstox Trading Account",
+  "provider": "Upstox",
+  "holdings": [
+    {
+      "symbol": "ADANIENT",
+      "companyName": "Adani Enterprises",
+      "sector": "Infrastructure",
+      "quantity": 18,
+      "avgPrice": 2850
+    },
+    {
+      "symbol": "ZOMATO",
+      "companyName": "Zomato Ltd",
+      "sector": "Technology",
+      "quantity": 75,
+      "avgPrice": 118
+    },
+    {
+      "symbol": "PAYTM",
+      "companyName": "One97 Communications",
+      "sector": "Fintech",
+      "quantity": 40,
+      "avgPrice": 790
+    },
+    {
+      "symbol": "NYKAA",
+      "companyName": "FSN E-Commerce Ventures",
+      "sector": "E-Commerce",
+      "quantity": 22,
+      "avgPrice": 185
+    },
+    {
+      "symbol": "TATAPOWER",
+      "companyName": "Tata Power",
+      "sector": "Energy",
+      "quantity": 35,
+      "avgPrice": 370
+    }
+  ]
+}

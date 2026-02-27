@@ -1,0 +1,41 @@
+{
+  "accountName": "Groww Investment Account",
+  "provider": "Groww",
+  "holdings": [
+    {
+      "symbol": "RELIANCE",
+      "companyName": "Reliance Industries",
+      "sector": "Energy",
+      "quantity": 8,
+      "avgPrice": 2400
+    },
+    {
+      "symbol": "HDFCBANK",
+      "companyName": "HDFC Bank",
+      "sector": "Banking",
+      "quantity": 10,
+      "avgPrice": 1450
+    },
+    {
+      "symbol": "ITC",
+      "companyName": "ITC Ltd",
+      "sector": "FMCG",
+      "quantity": 25,
+      "avgPrice": 420
+    },
+    {
+      "symbol": "TCS",
+      "companyName": "Tata Consultancy Services",
+      "sector": "IT",
+      "quantity": 5,
+      "avgPrice": 3500
+    },
+    {
+      "symbol": "SUNPHARMA",
+      "companyName": "Sun Pharmaceutical",
+      "sector": "Pharma",
+      "quantity": 12,
+      "avgPrice": 950
+    }
+  ]
+}
