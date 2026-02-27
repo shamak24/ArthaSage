@@ -28,27 +28,30 @@ export function Landing({ session }: { session: Session | null }) {
   return (
     <div className="min-h-screen bg-background">
       {/* Navigation */}
-      <nav className="border-b">
+      <nav className="border-b fixed top-0 left-0 right-0 backdrop-blur-md bg-background/80 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <span className="text-2xl font-bold">ArthaSage</span>
+        <span className="text-2xl font-bold">ArthaSage</span>
           </div>
           <div className="flex items-center gap-4">
-            {session ? (
-              <Link href="/user/dashboard">
-                <Button>Go to Dashboard</Button>
-              </Link>
-            ) : (
-              <>
-                <Link href="/sign-in">
-                  <Button variant="ghost">Sign In</Button>
-                </Link>
-                <Link href="/sign-up">
-                  <Button>Sign Up</Button>
-                </Link>
-                <ToggleTheme/>
-              </>
-            )}
+        {session ? (
+          <>
+            <Link href="/user/dashboard">
+          <Button>Go to Dashboard</Button>
+            </Link>
+            <ToggleTheme/>
+          </>
+        ) : (
+          <>
+            <Link href="/sign-in">
+          <Button variant="ghost">Sign In</Button>
+            </Link>
+            <Link href="/sign-up">
+          <Button>Sign Up</Button>
+            </Link>
+            <ToggleTheme/>
+          </>
+        )}
           </div>
         </div>
       </nav>

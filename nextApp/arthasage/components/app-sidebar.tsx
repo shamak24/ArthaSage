@@ -3,6 +3,7 @@
 import * as React from "react"
 import {
   IconChartBar,
+  IconCurrencyRupee,
   IconDashboard,
   IconInnerShadowTop,
   IconLogout,
@@ -23,6 +24,7 @@ import {
 } from "@/components/ui/sidebar"
 import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
+import { SettingsIcon } from "lucide-react"
 
 const navItems = [
   {
@@ -40,6 +42,21 @@ const navItems = [
     url: "/user/analyse",
     icon: IconChartBar,
   },
+  {
+    title: "View Transactions",
+    url: "/user/transactions",
+    icon: IconCurrencyRupee,
+  },
+  {
+    title: "View Portfolio",
+    url: "/user/transactions",
+    icon: IconInnerShadowTop,
+  },
+  {
+    title: "Settings",
+    url: "/user/transactions",
+    icon: SettingsIcon,
+  }
 ]
 
 export function AppSidebar({ userName, ...props }: React.ComponentProps<typeof Sidebar> & { userName?: string }) {
@@ -55,11 +72,8 @@ export function AppSidebar({ userName, ...props }: React.ComponentProps<typeof S
               asChild
               className="h-auto data-[slot=sidebar-menu-button]:!p-0 hover:bg-transparent"
             >
-              <Link href="/user/dashboard" className="flex items-center gap-2.5 px-1">
-                <div className="flex size-8 items-center justify-center rounded-lg bg-primary text-primary-foreground">
-                  <IconInnerShadowTop className="size-4" />
-                </div>
-                <span className="text-base font-bold tracking-tight">ArthaSage</span>
+              <Link href="/" className="flex items-center gap-2.5 px-1">
+                <span className="text-2xl font-bold tracking-wider">ArthaSage</span>
               </Link>
             </SidebarMenuButton>
           </SidebarMenuItem>

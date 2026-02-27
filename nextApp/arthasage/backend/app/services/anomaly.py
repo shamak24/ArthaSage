@@ -29,8 +29,9 @@ def detect_transaction_anomalies(transactions):
                     "transactionId": t.id,
                     "category": category,
                     "amount": t.amount,
-                    "average": avg,
-                    "severity": "high"
+                    "average": round(avg, 2),
+                    "severity": "high",
+                    "description": f"Unusually high {category} expense (₹{t.amount:,.0f} vs avg ₹{avg:,.0f})"
                 })
 
     if len(anomalies) == 0:

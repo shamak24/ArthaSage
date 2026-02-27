@@ -36,11 +36,11 @@ import type { RawAnalysis } from "@/lib/dashboard/dashboardApi"
 // ─── Constants ────────────────────────────────────────────────────────────────
 
 const PIE_COLORS = [
-  "hsl(var(--chart-1))",
-  "hsl(var(--chart-2))",
-  "hsl(var(--chart-3))",
-  "hsl(var(--chart-4))",
-  "hsl(var(--chart-5))",
+  "var(--color-chart-1)",
+  "var(--color-chart-2)",
+  "var(--color-chart-3)",
+  "var(--color-chart-4)",
+  "var(--color-chart-5)",
 ]
 
 // ─── Main Component ───────────────────────────────────────────────────────────
@@ -53,12 +53,15 @@ export default function AnalyticsClient({ data }: { data: RawAnalysis }) {
     .map(([category, amount]) => ({ category, amount }))
     .sort((a, b) => b.amount - a.amount)
 
-  const barChartConfig: ChartConfig = {
-    amount: {
-      label: "Amount (₹)",
-      color: "hsl(var(--primary))",
-    },
-  }
+const barChartConfig: ChartConfig = Object.fromEntries(
+    barData.map((item) => [
+        item.category,
+        {
+            label: item.category,
+            color: "var(--color-chart-1)",
+        },
+    ])
+)
 
   // ── Portfolio Donut Chart Data ──
   const pieData = Object.entries(portfolio_context.allocation).map(([name, value]) => ({
@@ -170,7 +173,7 @@ export default function AnalyticsClient({ data }: { data: RawAnalysis }) {
                 />
                 <Bar
                   dataKey="amount"
-                  fill="hsl(var(--primary))"
+                  fill="var(--color-chart-1)"
                   radius={[0, 4, 4, 0]}
                 />
               </BarChart>
@@ -273,13 +276,7 @@ export default function AnalyticsClient({ data }: { data: RawAnalysis }) {
                     <p className="text-sm font-medium">{anomaly.description}</p>
                     <div className="flex items-center gap-2">
                       <Badge variant="outline" className="text-xs">{anomaly.category}</Badge>
-                      <span className="text-xs text-muted-foreground">
-                        {new Date(anomaly.date).toLocaleDateString("en-IN", {
-                          day: "numeric",
-                          month: "short",
-                          year: "numeric",
-                        })}
-                      </span>
+                      <Badge variant="destructive" className="text-xs">{anomaly.severity}</Badge>
                     </div>
                   </div>
                   <span className="text-sm font-bold text-destructive shrink-0 ml-4">

@@ -86,9 +86,11 @@ export interface RawAnalysis {
   transaction_anomalies: {
     message: string
     anomalies: Array<{
-      date: string
+      transactionId: string
       amount: number
       category: string
+      average: number
+      severity: string
       description: string
     }>
   }
