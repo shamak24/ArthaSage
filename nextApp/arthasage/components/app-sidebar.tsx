@@ -24,7 +24,9 @@ import {
 } from "@/components/ui/sidebar"
 import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { SettingsIcon } from "lucide-react"
+import { ToggleTheme } from "@/components/theme-switch"
 
 const navItems = [
   {
@@ -49,35 +51,41 @@ const navItems = [
   },
   {
     title: "View Portfolio",
-    url: "/user/transactions",
+    url: "/user/portfolio",
     icon: IconInnerShadowTop,
   },
   {
     title: "Settings",
-    url: "/user/transactions",
+    url: "/user/usersettings",
     icon: SettingsIcon,
   }
 ]
 
+function getInitials(name?: string): string {
+  if (!name) return "U"
+  return name
+    .split(" ")
+    .map((n) => n[0])
+    .join("")
+    .toUpperCase()
+    .slice(0, 2)
+}
+
 export function AppSidebar({ userName, ...props }: React.ComponentProps<typeof Sidebar> & { userName?: string }) {
   const pathname = usePathname()
+  const name = userName
+  const image = null // Add user image URL if available
 
   return (
     <Sidebar collapsible="offcanvas" {...props}>
       {/* Header / Logo */}
       <SidebarHeader className="px-4 py-4">
-        <SidebarMenu>
-          <SidebarMenuItem>
-            <SidebarMenuButton
-              asChild
-              className="h-auto data-[slot=sidebar-menu-button]:!p-0 hover:bg-transparent"
-            >
-              <Link href="/" className="flex items-center gap-2.5 px-1">
-                <span className="text-2xl font-bold tracking-wider">ArthaSage</span>
-              </Link>
-            </SidebarMenuButton>
-          </SidebarMenuItem>
-        </SidebarMenu>
+        <div className="flex items-center justify-between gap-2">
+          <Link href="/" className="flex items-center gap-2.5">
+        <span className="text-xl font-bold tracking-wider">ArthaSage</span>
+          </Link>
+          <ToggleTheme />
+        </div>
       </SidebarHeader>
 
       <Separator className="mb-2" />
@@ -116,9 +124,12 @@ export function AppSidebar({ userName, ...props }: React.ComponentProps<typeof S
       <SidebarFooter className="px-3 py-4">
         <Separator className="mb-4" />
         <div className="flex items-center gap-3 px-2 mb-3">
-          <div className="flex size-8 items-center justify-center rounded-full bg-muted text-muted-foreground shrink-0">
-            <IconUser className="size-4" />
-          </div>
+          <Avatar className="size-9">
+            <AvatarImage src={image ?? undefined} />
+            <AvatarFallback className="text-lg font-semibold bg-primary/10 text-primary">
+              {getInitials(name)}
+            </AvatarFallback>
+          </Avatar>
           <div className="min-w-0">
             <p className="text-sm font-semibold truncate">{userName ?? "User"}</p>
             <p className="text-xs text-muted-foreground truncate">Personal Account</p>

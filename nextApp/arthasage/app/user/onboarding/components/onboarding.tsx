@@ -168,7 +168,7 @@ export default function OnboardingComponent() {
         {/* Header */}
         <div className="mb-8 text-center">
           <h1 className="text-4xl font-bold tracking-tight mb-2">
-            Welcome to Fin AI
+            Welcome to <span className="text-primary"> ArthaSage</span>
           </h1>
           <p className="text-muted-foreground text-lg">
             Let's get you started. Choose how you'd like to proceed.

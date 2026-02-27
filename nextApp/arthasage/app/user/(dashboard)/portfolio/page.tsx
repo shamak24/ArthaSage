@@ -1,4 +1,4 @@
-import TransactionView from "./transactionView";
+import PortfolioView from "./portfolioView";
 import { getDashboardData } from "@/lib/dashboard/get-dashboard-data";
 import { getSession } from "@/lib/session";
 
@@ -7,6 +7,6 @@ export default async function Page() {
   const data = await getDashboardData(session!.user.id);
 
   return (
-    <TransactionView data={data} />
+    <PortfolioView data={data} />
   );
 }
