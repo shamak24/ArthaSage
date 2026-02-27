@@ -20,8 +20,6 @@ import Link from 'next/dist/client/link';
 import { Badge } from "@/components/ui/badge";
 import { finishOnboarding } from "@/lib/actions/onboardingComplete";
 
-// import { onboardingAction } from "@/lib/actions/user-actions";
-
 const FAKE_BANKS = [
   { id: "HDFC", name: "HDFC Bank", icon: "🏦", type: "bank" },
   { id: "ICICI", name: "ICICI Bank", icon: "🏦", type: "bank" },

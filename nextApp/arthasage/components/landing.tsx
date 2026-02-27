@@ -31,8 +31,7 @@ export function Landing({ session }: { session: Session | null }) {
       <nav className="border-b">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <Sparkles className="w-6 h-6 text-primary" />
-            <span className="text-xl font-bold">Fin AI</span>
+            <span className="text-2xl font-bold">ArthaSage</span>
           </div>
           <div className="flex items-center gap-4">
             {session ? (
@@ -62,12 +61,12 @@ export function Landing({ session }: { session: Session | null }) {
             Next-Gen CA Automation
           </Badge>
 
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight bg-gradient-to-r from-slate-900 via-blue-900 to-indigo-900 dark:from-slate-50 dark:via-blue-100 dark:to-indigo-100 bg-clip-text text-transparent">
-            Fin AI
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight bg-gradient-to-r from-slate-900 via-blue-900 to-indigo-900 dark:from-slate-50 dark:via-blue-100 dark:to-indigo-100 bg-clip-text text-transparent pb-4">
+            ArthaSage
           </h1>
 
           <p className="text-xl md:text-2xl text-slate-600 dark:text-slate-400 max-w-3xl">
-            Fin AI is the finance manager with AI insights that helps you make smarter financial decisions, automate tasks, and achieve your financial goals faster than ever before.
+            ArthaSage is the finance manager with AI insights that helps you make smarter financial decisions, automate tasks, and achieve your financial goals faster than ever before.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mt-8">
@@ -107,10 +106,10 @@ export function Landing({ session }: { session: Session | null }) {
       <section className="container mx-auto px-4 py-16">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-slate-50 mb-4">
-                Key Features of Fin AI
+                Key Features of ArthaSage
           </h2>
           <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-                Discover how Fin AI can revolutionize your financial management with cutting-edge AI capabilities
+                Discover how ArthaSage can revolutionize your financial management with cutting-edge AI capabilities
           </p>
         </div>
 
