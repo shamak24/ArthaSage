@@ -17,9 +17,10 @@ import {
 
 interface DashboardViewProps {
   data: AnalysisResult;
+  username: string;
 }
 
-export default function DashboardView({ data }: DashboardViewProps) {
+export default function DashboardView({ data, username }: DashboardViewProps) {
   const { insights } = data;
 
   const getHealthColor = (health: string) => {
@@ -52,7 +53,8 @@ export default function DashboardView({ data }: DashboardViewProps) {
     <div className="space-y-8 pb-8">
       {/* Header */}
       <div className="space-y-2">
-        <h1 className="text-4xl font-bold tracking-tight">Financial Dashboard</h1>
+        <h1 className="text-4xl font-bold tracking-tight">Welcome, <span
+        className="text-primary">{username}</span></h1>
         <p className="text-lg text-muted-foreground">Your complete financial analysis and insights</p>
       </div>
 
@@ -223,25 +225,6 @@ export default function DashboardView({ data }: DashboardViewProps) {
           </div>
         </CardContent>
       </Card>
-
-      {/* Anomalies (if any) */}
-      {insights.anomalies && insights.anomalies.length > 0 && (
-        <Card className="border-destructive/50 bg-destructive/5 shadow-sm">
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2 text-xl text-destructive">
-              <IconAlertTriangle className="h-5 w-5" />
-              Anomalies Detected
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <ul className="space-y-2">
-              {insights.anomalies.map((anomaly, index) => (
-                <li key={index} className="text-sm text-destructive">{JSON.stringify(anomaly)}</li>
-              ))}
-            </ul>
-          </CardContent>
-        </Card>
-      )}
     </div>
   );
 }

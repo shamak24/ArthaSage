@@ -9,6 +9,6 @@ export default async function Page() {
   console.log("Dashboard data:", data);
 
   return (
-    <DashboardView data={data} />
+    <DashboardView data={data} username={session!.user.name} />
   );
 }
