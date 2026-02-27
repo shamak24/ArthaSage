@@ -2,6 +2,7 @@
 from app.services.ai.prompt_builder import build_financial_prompt
 from google import genai
 import google.genai.types as types
+import json
 
 def generate_insights(analysis):
 
@@ -18,4 +19,5 @@ def generate_insights(analysis):
         )
     )
 
-    return {"response": response.text}
+    # Parse the JSON string into a Python dict
+    return json.loads(response.text)

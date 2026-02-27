@@ -43,11 +43,11 @@ def insights(request: AnalyzeRequest):
         request.holdings
     )
 
-    insights = generate_insights(analysis)
+    insights_data = generate_insights(analysis)
 
     return {
         "analysis": analysis,
-        "insights": insights
+        "insights": insights_data
     }
 
 # @app.post("/ask")
