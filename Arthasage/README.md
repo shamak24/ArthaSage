@@ -1,56 +1,109 @@
-# Welcome to your Expo app 👋
+# Artha Sage - Personal AI Finance Assistant
+Artha Sage is an AI-powered personal finance manager that transforms raw financial transactions into intelligent insights, predictions, and actionable financial guidance using Retrieval-Augmented Generation (RAG).
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## 🚀 Overview
+Modern finance apps show what you spent.
+Artha Sage explains why you spent and what to do next.
 
-## Get started
+The platform simulates real-world financial transactions and applies AI-driven analytics to help users:
 
-1. Install dependencies
+- Understand spending behavior
+- Detect unusual transactions
+- Predict future expenses
+- Receive personalized financial recommendations
 
+## ✨ Key Features
+
+### 📊 Unified Financial Dashboard
+- Centralized transaction tracking
+- Category-wise analytics
+- Interactive charts & visual summaries
+
+### 🤖 AI Expense Categorization
+- Embedding-based similarity search
+- Vector database retrieval
+- RAG-powered classification using LLMs
+
+### 🚨 Unusual Transaction Detection
+- Statistical anomaly detection (±2.5σ deviation)
+- Behavioral spending analysis
+
+### 🧾 AI Financial Insights (Core Feature)
+- Financial best-practice documents stored in Vector DB
+- Context retrieval using RAG
+- Personalized AI-generated recommendations
+
+### 📈 Spending Prediction
+- Time-based spending analysis
+- Monthly expense forecasting
+
+### 🔐 Secure User Experience
+- JWT Authentication
+- User-specific analytics and insights
+
+## 🧠 What Makes Artha Sage Different (USP)
+- ✅ **Explainable AI** — insights, not just numbers
+- ✅ **RAG Architecture** — grounded AI recommendations
+- ✅ **Hybrid Intelligence** — statistics + ML + LLM reasoning
+- ✅ **Privacy-Friendly** — simulated financial ecosystem
+- ✅ **Proactive Finance** — predicts and advises, not just tracks
+
+## 🛠️ Technology Stack
+- **Web Frontend:** Next.js 14+ (App Router), Tailwind CSS
+- **Mobile App:** React Native (Expo)
+- **Backend:** FastAPI (Python 3.10+)
+- **AI Engine:** Google Gemini API (Flash/Pro) with RAG Pipeline
+- **Statistics:** NumPy/SciPy for anomaly detection
+
+## 🏗️ Architecture
+The system follows a classic decoupled architecture with a focus on RAG (Retrieval-Augmented Generation).
+
+```mermaid
+flowchart LR
+    A[Mobile/Web App] --> B[FastAPI Backend]
+    B --> C[Anomaly Detection]
+    B --> D[RAG Engine]
+    D --> E[Google Gemini]
+    E --> F[AI Insights]
+```
+
+## 🏁 Getting Started
+
+### Prerequisites
+- Node.js 18+
+- Python 3.10+
+- Gemini API Key
+
+### Installation
+
+1. **Clone the repository:**
    ```bash
-   npm install
+   git clone https://github.com/codecaffin4346/Financemanager.git
+   cd Financemanager
    ```
 
-2. Start the app
-
+2. **Backend Setup:**
    ```bash
+   cd backend
+   pip install -r requirements.txt
+   $env:GEMINI_API_KEY="your_api_key_here"  # Windows
+   python -m uvicorn app.main:app --reload
+   ```
+
+3. **Web Frontend Setup:**
+   ```bash
+   cd ..
+   npm install
+   npm run dev
+   ```
+
+4. **Mobile App Setup:**
+   ```bash
+   cd mobile
+   npm install
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-### Other setup steps
-
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## 🛡️ Security & Privacy
+- **Local Context:** All insights are generated by providing transaction context to the LLM within a private prompt.
+- **API Security:** API keys are managed via environment variables and never committed to version control.
