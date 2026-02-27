@@ -6,12 +6,14 @@ import { ToggleTheme } from "@/components/theme-switch"
 
 export function DashboardLayoutClient({
   children,
+  userName,
 }: {
   children: React.ReactNode
+  userName: string
 }) {
   return (
     <SidebarProvider>
-      <AppSidebar />
+      <AppSidebar userName={userName} />
       <SidebarInset className="flex flex-col">
         <header className="flex items-center justify-end px-6 py-3 border-b">
           <ToggleTheme />

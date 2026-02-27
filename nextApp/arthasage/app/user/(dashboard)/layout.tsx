@@ -9,5 +9,9 @@ export default async function Layout({ children }: { children: React.ReactNode }
     redirect("/login");
   }
 
-  return <DashboardLayoutClient>{children}</DashboardLayoutClient>;
+  return (
+    <DashboardLayoutClient userName={session.user.name}>
+      {children}
+    </DashboardLayoutClient>
+  );
 }

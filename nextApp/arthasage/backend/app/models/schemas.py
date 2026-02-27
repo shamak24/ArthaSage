@@ -18,4 +18,3 @@ class Holding(BaseModel):
 class AnalyzeRequest(BaseModel):
     transactions: List[Transaction]
     holdings: List[Holding] = []
-
