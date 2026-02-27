@@ -17,7 +17,7 @@ export default function AuthLayout({
             className="flex items-center gap-2 hover:opacity-80 transition-opacity"
           >
             <Sparkles className="w-6 h-6 text-primary" />
-            <span className="text-xl font-bold">Fin AI</span>
+            <span className="text-xl font-bold">ArthaSage</span>
           </Link>
           <Link href="/">
             <Button variant="ghost" size="sm">

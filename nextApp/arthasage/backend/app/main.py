@@ -6,6 +6,7 @@ from app.models.schemas import Transaction
 from app.services.analyze import analyze_finances
 from app.models.schemas import AnalyzeRequest
 from app.services.ai.generate_insights import generate_insights
+from app.services.rag.chat import answer_question
 
 dotenv.load_dotenv()  # Load environment variables from .env file
 app = FastAPI(title="AI Finance Manager API")
@@ -43,20 +44,26 @@ def insights(request: AnalyzeRequest):
         request.holdings
     )
 
-    insights = generate_insights(analysis)
+    insights_data = generate_insights(analysis)
 
     return {
         "analysis": analysis,
-        "insights": insights
+        "insights": insights_data
     }
 
-# @app.post("/ask")
-# def ask_question(request: AnalyzeRequest):
-#     analysis = analyze_finances(
-#         request.transactions,
-#         request.holdings
-#     )
+@app.post("/ask")
+def ask_question(request: AnalyzeRequest, question: str):
+    analysis = analyze_finances(
+        request.transactions,
+        request.holdings
+    )
+    if not analysis or not isinstance(analysis, dict):
+        analysis = {
+            "financial_context": {},
+            "portfolio_context": {},
+            "anomalies": "No anomalies detected."
+        }
 
-#     answer = answer_question(question, analysis)
+    answer = answer_question(analysis, question)
 
-#     return {"answer": answer}
+    return {"answer": answer}

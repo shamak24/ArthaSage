@@ -1,12 +1,13 @@
-
-from app.services.ai.prompt_builder import build_financial_prompt
+from app.services.rag.ragPrompt import build_rag_prompt
 from google import genai
 import google.genai.types as types
 import json
+from app.services.rag.retriever import retrieve
 
-def generate_insights(analysis):
+def answer_question(analysis, question):
+    retrieved_docs = retrieve(question)
 
-    prompt = build_financial_prompt(analysis)
+    prompt = build_rag_prompt(analysis, question, retrieved_docs)
 
     client = genai.Client()
 
