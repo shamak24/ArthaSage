@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-from .routers import transactions, insights
+from .routers import transactions, insights, accounts
 
 app = FastAPI(title="AI Finance Manager API")
 
@@ -24,6 +24,7 @@ app.add_middleware(
 
 app.include_router(transactions.router, prefix="/api/transactions", tags=["transactions"])
 app.include_router(insights.router, prefix="/api/insights", tags=["insights"])
+app.include_router(accounts.router, prefix="/api/accounts", tags=["accounts"])
 
 @app.get("/")
 def read_root():
