@@ -11,13 +11,17 @@ import {
     Settings,
     Sparkles,
     Crown,
+    Link2,
+    Briefcase,
 } from "lucide-react"
 
 const navItems = [
     { label: "Dashboard", icon: LayoutDashboard, href: "/" },
     { label: "Transactions", icon: ArrowLeftRight, href: "/transactions" },
     { label: "Analytics", icon: PieChart, href: "/analytics" },
-    { label: "AI Advisor", icon: Bot, href: "/advisor", badge: "New" },
+    { label: "Connect", icon: Link2, href: "/connect", badge: "New" },
+    { label: "Portfolio", icon: Briefcase, href: "/portfolio" },
+    { label: "AI Advisor", icon: Bot, href: "/advisor" },
     { label: "Settings", icon: Settings, href: "/settings" },
 ]
 
