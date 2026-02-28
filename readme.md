@@ -1,58 +1,67 @@
-# 🧠 Artha Sage - Personal AI Finance Assistant
+# 💸 ArthaSage — Finance Manager with AI Insights
 
-> **Artha Sage** is an AI-powered personal finance manager that transforms raw financial transactions into intelligent insights, predictions, and actionable financial guidance using Retrieval-Augmented Generation (RAG).
+> An AI-powered financial intelligence platform that analyzes spending behavior, detects anomalies, and provides personalized financial guidance through a conversational AI assistant.
 
 ---
 
 ## 🚀 Overview
 
-Modern finance apps show *what you spent*.  
-**Artha Sage explains *why* you spent and *what to do next*.**
+**ArthaSage** is an AI Financial Copilot designed to help users understand and improve their financial decisions using intelligent analytics and Retrieval-Augmented Generation (RAG).
 
-The platform simulates real-world financial transactions and applies AI-driven analytics to help users:
+Instead of manually tracking expenses, users link simulated bank and demat accounts to instantly receive:
 
-- Understand spending behavior
-- Detect unusual transactions
-- Predict future expenses
-- Receive personalized financial recommendations
+- Financial health insights
+- Spending analytics
+- Anomaly detection
+- Portfolio understanding
+- Conversational financial guidance
 
----
-
-## ✨ Key Features
-
-### 📊 Unified Financial Dashboard
-- Centralized transaction tracking
-- Category-wise analytics
-- Interactive charts & visual summaries
-
-### 🤖 AI Expense Categorization
-- Embedding-based similarity search
-- Vector database retrieval
-- RAG-powered classification using LLMs
-
-### 🚨 Unusual Transaction Detection
-- Statistical anomaly detection (±2.5σ deviation)
-- Behavioral spending analysis
-
-### 🧾 AI Financial Insights (Core Feature)
-- Financial best-practice documents stored in Vector DB
-- Context retrieval using RAG
-- Personalized AI-generated recommendations
-
-### 📈 Spending Prediction
-- Time-based spending analysis
-- Monthly expense forecasting
-
-### 🔐 Secure User Experience
-- JWT Authentication
-- User-specific analytics and insights
+The system combines **statistical analysis + AI reasoning + knowledge retrieval** to generate grounded financial advice.
 
 ---
 
-## 🧠 What Makes Artha Sage Different (USP)
+## 🧠 Core Features
 
-✅ **Explainable AI** — insights, not just numbers  
-✅ **RAG Architecture** — grounded AI recommendations  
-✅ **Hybrid Intelligence** — statistics + ML + LLM reasoning  
-✅ **Privacy-Friendly** — simulated financial ecosystem  
-✅ **Proactive Finance** — predicts and advises, not just tracks
+### 📊 AI Financial Dashboard
+- Income, expense, and savings analysis
+- Category-wise spending insights
+- Financial health scoring
+- Real-time analytics overview
+
+### ⚠️ Anomaly Detection
+- Detects unusual spending patterns
+- Statistical deviation analysis
+- Highlights risky financial behavior
+
+### 🤖 AI Financial Copilot
+- Ask finance-related questions naturally
+- Personalized answers using user financial context
+- Supports both personal and general financial advice
+
+### 📚 Knowledge-Based RAG System
+- Financial knowledge scraped from educational sources
+- Embedded into vector database
+- Semantic search retrieves relevant knowledge for AI responses
+
+### 🔗 Smart Account Linking Simulation
+- Simulated bank & demat account linking
+- Preloaded realistic datasets
+- Instant onboarding experience
+
+---
+
+## 🏗️ Architecture
+
+
+---
+
+## 🔧 Tech Stack
+- **Backend**: Python, FastAPI, Next.js
+- **Frontend**: Next.js, React Native
+
+---
+
+## Setup Instructions
+1. Clone the repository
+```bash
+git clone https://github.com/shamak24/arthasage.git

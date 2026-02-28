@@ -82,7 +82,7 @@ export function AppSidebar({ userName, ...props }: React.ComponentProps<typeof S
       <SidebarHeader className="px-4 py-4">
         <div className="flex items-center justify-between gap-2">
           <Link href="/" className="flex items-center gap-2.5">
-        <span className="text-xl font-bold tracking-wider">ArthaSage</span>
+        <span className="text-2xl font-bold tracking-wider text-primary">ArthaSage</span>
           </Link>
           <ToggleTheme />
         </div>
