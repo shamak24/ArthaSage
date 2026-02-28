@@ -50,18 +50,48 @@ The system combines **statistical analysis + AI reasoning + knowledge retrieval*
 
 ---
 
-## 🏗️ Architecture
-
-
----
-
 ## 🔧 Tech Stack
 - **Backend**: Python, FastAPI, Next.js
-- **Frontend**: Next.js, React Native
+- **Frontend**: Next.js, React Native (for demo )
+- **Database**: Supabase (PostgreSQL)
+- **AI/ML**: Gemini 3 flash, FAISS for vector search, embedder for knowledge retrieval
 
 ---
 
-## Setup Instructions
+## Setup Instructions for Web App
 1. Clone the repository
 ```bash
-git clone https://github.com/shamak24/arthasage.git
+git clone https://github.com/shamak24/ArthaSage.git
+cd ArthaSage/nextApp/arthasage
+```
+2. Install dependencies
+```bash
+bun install
+
+cd backend
+pip install -r requirements.txt
+```
+3. Setup environment variables
+```bash
+# Create .env.local file in with the following content .env.local:
+SUPABASE_DB_URL=''
+DB_URL=''
+BETTER_AUTH_URL='http://localhost:3000'
+BETTER_AUTH_BASE_URL='http://localhost:3000'
+
+#create .env file in the backend directory of webapp
+GEMINI_API_KEY=
+
+```
+4. Run the application
+```bash
+# Start the backend server
+cd nextApp/arthasage/backend
+uvicorn main:app --reload
+
+# Start the frontend
+cd nextApp/arthasage
+bun dev
+```
+5. Access the web app at `http://localhost:3000`
+
